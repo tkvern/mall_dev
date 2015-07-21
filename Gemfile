@@ -11,6 +11,7 @@ gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 gem 'mongoid'
+gem "font-awesome-rails"
 
 gem 'puma'
 # Use jquery as the JavaScript library

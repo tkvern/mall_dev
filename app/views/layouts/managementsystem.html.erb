@@ -7,7 +7,7 @@
     <title><%= content_for?(:title) ? yield(:title) : "MallDev" %></title>
     <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag "application", :media => "all" %>
+    <%= stylesheet_link_tag "application", media: 'all', 'data-turbolinks-track' => true  %>
 
     <!-- For third-generation iPad with high-resolution Retina display: -->
     <!-- Size should be 144 x 144 pixels -->
@@ -29,7 +29,7 @@
     <!-- Size should be 32 x 32 pixels -->
     <%= favicon_link_tag 'favicon.ico', :rel => 'shortcut icon' %>
 
-    <%= javascript_include_tag "application" %>
+    <%= javascript_include_tag "application", media: 'all', 'data-turbolinks-track' => true %>
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
     <!--[if lt IE 9]>
@@ -40,19 +40,22 @@
   <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
       <div><span class="title">权限管理系统</span></div>
-      
+
       <div class="col-lg-3 ">
         <div class="input-group">
           <input type="text" class="form-control" placeholder="Search for...">
           <span class="input-group-btn">
           <button class="btn btn-default" type="button">搜索</button>
-          <i class="glyphicon glyphicon-fast-backward">
-          </i> 
+          <li class="fa fa-camera-retro fa-lg">asfa
+          </li>
           </span>
         </div><!-- /input-group -->
        </div>
     </div>
   </nav>
-
+<div>
+  <br>  <br><br>  <br><br>  <br><br>  <br><br>  <br><br>  <br><br>  <br><br>  <br>
+  <li class="fa fa-camera-retro fa-lg">&nbsp;这是爱啊  </li>
+</div>
   </body>
 </html>
