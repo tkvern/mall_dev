@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   resources :permissions
   resources :roles
   resources :users
+  get 'oo_admin/index'
+
   get 'welcome/index'
 
   # The priority is based upon order of creation: first created -> highest priority.
