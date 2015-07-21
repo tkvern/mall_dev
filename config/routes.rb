@@ -3,8 +3,11 @@ Rails.application.routes.draw do
   resources :roles
   resources :users
   get 'oo_admin/index'
+  
+  get 'oo_admin/login'
 
   get 'welcome/index'
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

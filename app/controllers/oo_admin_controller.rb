@@ -1,5 +1,8 @@
 class OoAdminController < ApplicationController
-  layout 'managementsystem'
+  layout 'managementSystem'
   def index
+  end
+  def login
+  	render layout: false
   end
 end
