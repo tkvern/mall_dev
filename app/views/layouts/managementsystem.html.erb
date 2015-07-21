@@ -37,39 +37,22 @@
     <![endif]-->
   </head>
   <body>
-
-    <div class="navbar navbar-default navbar-static-top">
-      <div class="container">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">MallDev</a>
-        <div class="navbar-collapse collapse navbar-responsive-collapse">
-          <ul class="nav navbar-nav">
-            <li><%= link_to "Link1", "/path1"  %></li>
-            <li><%= link_to "Link2", "/path2"  %></li>
-            <li><%= link_to "Link3", "/path3"  %></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
+  <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <%= bootstrap_flash %>
-          这是默认的
-          <%= yield %>
-        </div>
-      </div><!--/row-->
-
-      <footer>
-        <p>&copy; Company 2015</p>
-      </footer>
-
-    </div> <!-- /container -->
+      <div><span class="title">权限管理系统</span></div>
+      
+      <div class="col-lg-3 ">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Search for...">
+          <span class="input-group-btn">
+          <button class="btn btn-default" type="button">搜索</button>
+          <i class="glyphicon glyphicon-fast-backward">
+          </i> 
+          </span>
+        </div><!-- /input-group -->
+       </div>
+    </div>
+  </nav>
 
   </body>
 </html>

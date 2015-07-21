@@ -1,5 +1,6 @@
 class PermissionsController < ApplicationController
   before_action :set_permission, only: [:show, :edit, :update, :destroy]
+  layout 'managementSystem'
 
   # GET /permissions
   # GET /permissions.json
