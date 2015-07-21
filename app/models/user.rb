@@ -16,6 +16,6 @@ class User
   field :last_login_ip, type: String
   field :current_login_at, type: DateTime
   field :current_login_ip, type: String
-
+  
   has_and_belongs_to_many :roles
 end
