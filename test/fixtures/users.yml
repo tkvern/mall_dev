@@ -1,0 +1,35 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  username: MyString
+  pasword_hash: MyString
+  email: MyString
+  mobile: MyString
+  activate_token: MyString
+  active_token_at: 
+  is_activated: 
+  pass_reset_token: MyString
+  pass_reset_token_at: 
+  pass_reset_at: 
+  last_login_at: 
+  last_login_ip: MyString
+  current_login_at: 
+  current_login_ip: MyString
+  roles: 
+
+two:
+  username: MyString
+  pasword_hash: MyString
+  email: MyString
+  mobile: MyString
+  activate_token: MyString
+  active_token_at: 
+  is_activated: 
+  pass_reset_token: MyString
+  pass_reset_token_at: 
+  pass_reset_at: 
+  last_login_at: 
+  last_login_ip: MyString
+  current_login_at: 
+  current_login_ip: MyString
+  roles: 
