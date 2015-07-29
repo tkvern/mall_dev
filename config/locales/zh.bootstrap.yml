@@ -15,7 +15,8 @@ zh-CN:
       confirm: "您确定不?"
       destroy: "删除"
       new: "新建"
-      edit: "Edit"
+      edit: "编辑"
+      create: "创建"
     titles:
       edit: "编辑 %{model}"
       save: "保存 %{model}"
