@@ -8,6 +8,7 @@ class User
 
   ## Mobile authenticatable
   field :mobile,             type: String, default: ""
+  field :username,           type: String, default: ""
 
   ## Database authenticatable
   field :email,              type: String, default: ""
