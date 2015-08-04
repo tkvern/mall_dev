@@ -13,6 +13,8 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'mongoid'
 gem "font-awesome-rails"
 
+gem 'rails-i18n'
+
 gem 'puma'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'

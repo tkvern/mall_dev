@@ -51,6 +51,7 @@
     <%=f.error_span(:activate_token) %>
   </div>
   <div class="form-group">
+  <%= User.human_attribute_name("username") %>
     <%= f.label :active_token_at, :class => 'control-label col-lg-2' %>
     <div class="col-lg-10">
       <%= f.text_field :active_token_at, :class => 'form-control' %>

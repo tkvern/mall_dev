@@ -2,7 +2,7 @@ class User
   include Mongoid::Document
   include Mongoid::Timestamps
 
-  field :username, type: String
+  field :username, type: String, localize: true
   field :pasword_hash, type: String
   field :email, type: String
   field :mobile, type: String
