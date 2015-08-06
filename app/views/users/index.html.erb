@@ -6,21 +6,17 @@
   <thead>
     <tr>
       <th><%= model_class.human_attribute_name(:id) %></th>
-      <th><%= model_class.human_attribute_name(:username) %></th>
-      <th><%= model_class.human_attribute_name(:pasword_hash) %></th>
-      <th><%= model_class.human_attribute_name(:email) %></th>
       <th><%= model_class.human_attribute_name(:mobile) %></th>
-      <th><%= model_class.human_attribute_name(:activate_token) %></th>
-      <th><%= model_class.human_attribute_name(:active_token_at) %></th>
-      <th><%= model_class.human_attribute_name(:is_activated) %></th>
-      <th><%= model_class.human_attribute_name(:pass_reset_token) %></th>
-      <th><%= model_class.human_attribute_name(:pass_reset_token_at) %></th>
-      <th><%= model_class.human_attribute_name(:pass_reset_at) %></th>
-      <th><%= model_class.human_attribute_name(:last_login_at) %></th>
-      <th><%= model_class.human_attribute_name(:last_login_ip) %></th>
-      <th><%= model_class.human_attribute_name(:current_login_at) %></th>
-      <th><%= model_class.human_attribute_name(:current_login_ip) %></th>
-      <th><%= model_class.human_attribute_name(:role_ids) %></th>
+      <th><%= model_class.human_attribute_name(:username) %></th>
+      <th><%= model_class.human_attribute_name(:email) %></th>
+      <th><%= model_class.human_attribute_name(:encrypted_password) %></th>
+      <th><%= model_class.human_attribute_name(:reset_password_token) %></th>
+      <th><%= model_class.human_attribute_name(:reset_password_sent_at) %></th>
+      <th><%= model_class.human_attribute_name(:remember_created_at) %></th>
+      <th><%= model_class.human_attribute_name(:current_sign_in_at) %></th>
+      <th><%= model_class.human_attribute_name(:last_sign_in_at) %></th>
+      <th><%= model_class.human_attribute_name(:current_sign_in_ip) %></th>
+      <th><%= model_class.human_attribute_name(:last_sign_in_ip) %></th>
       <th><%= model_class.human_attribute_name(:created_at) %></th>
       <th><%=t '.actions', :default => t("helpers.actions") %></th>
     </tr>
@@ -29,21 +25,17 @@
     <% @users.each do |user| %>
       <tr>
         <td><%= link_to user.id, user_path(user) %></td>
-        <td><%= user.username %></td>
-        <td><%= user.pasword_hash %></td>
-        <td><%= user.email %></td>
         <td><%= user.mobile %></td>
-        <td><%= user.activate_token %></td>
-        <td><%= user.active_token_at %></td>
-        <td><%= user.is_activated %></td>
-        <td><%= user.pass_reset_token %></td>
-        <td><%= user.pass_reset_token_at %></td>
-        <td><%= user.pass_reset_at %></td>
-        <td><%= user.last_login_at %></td>
-        <td><%= user.last_login_ip %></td>
-        <td><%= user.current_login_at %></td>
-        <td><%= user.current_login_ip %></td>
-        <td><%= user.role_ids %></td>
+        <td><%= user.username %></td>
+        <td><%= user.email %></td>
+        <td><%= user.encrypted_password %></td>
+        <td><%= user.reset_password_token %></td>
+        <td><%= user.reset_password_sent_at %></td>
+        <td><%= user.remember_created_at %></td>
+        <td><%= user.current_sign_in_at %></td>
+        <td><%= user.last_sign_in_at %></td>
+        <td><%= user.current_sign_in_ip %></td>
+        <td><%= user.last_sign_in_ip %></td>
         <td><%=l user.created_at %></td>
         <td>
           <%= link_to t('.edit', :default => t("helpers.links.edit")),

@@ -2,7 +2,6 @@ class Permission
   include Mongoid::Document
   include Mongoid::Timestamps
 
-  field :namespace, type: String
   field :controller, type: String
   field :action, type: String
 
